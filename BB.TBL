@@ -1,0 +1,12 @@
+/* BIBLIOGRAPHY TABLE */
+
+DROP TABLE BUNNELL.BB;
+
+CREATE TABLE BUNNELL.BB
+       (BN      CHAR(3) NOT NULL,
+        BNAME   CHAR(60),
+        BAUT    CHAR(25),
+        BYR     CHAR(4),
+        BNP     CHAR(17),
+
+        PRIMARY KEY(BN));

@@ -1,0 +1,9 @@
+create table gensys.cornotes
+(
+pkey            smallint        not null,
+date            date            not null,
+ref             char(10),
+
+foreign key (pkey) references gensys.correspondent on delete cascade);
+
+

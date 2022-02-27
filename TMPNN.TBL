@@ -1,0 +1,13 @@
+-- WORKING TABLE FOR XLINE
+
+DROP TABLE GENSYS.TMPNN;
+
+CREATE TABLE GENSYS.TMPNN
+       (MEMBF   CHAR(6) NOT NULL,
+        ND      CHAR(4) NOT NULL,
+        NL      CHAR(1) NOT NULL,
+        NP      CHAR(5),
+        NTN     CHAR(14),
+        NTXT    CHAR(59),
+        NRF     CHAR(8),
+        NSRF    CHAR(27));

@@ -1,0 +1,16 @@
+create table gensys.correspondent
+(
+pkey            smallint                not null,
+last            char(15)                not null,
+first           char(15),
+middle          char(15),
+membn           char(6),
+desc_membn      char(6),
+addr1           char(30),
+addr2           char(30),
+email           char(60),
+
+primary key(pkey));
+
+create index gensys.cor_name on gensys.correspondent(last, first);
+

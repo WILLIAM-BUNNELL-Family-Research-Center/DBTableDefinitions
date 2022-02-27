@@ -1,0 +1,8 @@
+CREATE TABLE MMTEST
+       (MEMBF   CHAR(6) NOT NULL PRIMARY KEY,
+        PF      CHAR(6),  
+        PSP     CHAR(1),
+        SFN     CHAR (12));
+
+
+

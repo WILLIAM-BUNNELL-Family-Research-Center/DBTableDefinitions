@@ -1,0 +1,9 @@
+/* TRACKING TABLE FOR CHANGED KEYS */
+
+DROP TABLE BUNNELL.CHANGES;
+
+CREATE TABLE BUNNELL.CHANGES
+(       OLD     CHAR(6),
+        NEW     CHAR(6),
+        CHDATE    DATE);
+                       

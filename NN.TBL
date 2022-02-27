@@ -1,0 +1,24 @@
+/* NOTES TABLE */
+
+DROP TABLE BUNNELL.NN;
+
+CREATE TABLE BUNNELL.NN
+
+       (MEMBF   CHAR(6) NOT NULL,
+        ND      CHAR(4) NOT NULL,
+        NL      CHAR(1) NOT NULL,
+        NP      CHAR(5),
+        NTN     CHAR(14),
+        NTXT    CHAR(59),
+        NRF     CHAR(5),
+        NSRF    CHAR(27),
+
+        PRIMARY KEY (MEMBF, ND, NL));
+
+
+CREATE INDEX "BUNNELL"."NN_NP" ON "BUNNELL"."NN" 
+		("NP" ASC,
+		 "ND" ASC,
+		 "MEMBF" ASC) ;
+
+

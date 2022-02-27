@@ -1,0 +1,55 @@
+/*  WORKING TABLE FOR XLINE */
+
+DROP TABLE GENSYS.TMPMMSS;
+
+CREATE TABLE GENSYS.TMPMMSS
+       (MEMBF   CHAR(6),
+        MFN     CHAR(12),
+        MMN     CHAR(12),
+        MLN     CHAR(7),
+        MDBY    CHAR(4),
+        MDBM    CHAR(4),
+        MPB     CHAR(5),
+        MBTN    CHAR(15),
+        MDDY    CHAR(4),
+        MDDM    CHAR(4),
+        MPD     CHAR(5),
+        MDTN    CHAR(15),
+        MG      CHAR(5),
+        MBY     CHAR(4),
+        MBM     CHAR(4),
+        MCB     CHAR(5),
+        PF      CHAR(6),
+        PSP     CHAR(1),
+        GEN     SMALLINT,
+        SP      CHAR(1),
+        SFN     CHAR(12),
+        SMN     CHAR(12),
+        SLN     CHAR(12),
+        SDBY    CHAR(4),
+        SDBM    CHAR(4),
+        SPB     CHAR(5),
+        SBTN    CHAR(15),
+        SDMY    CHAR(4),
+        SDMM    CHAR(4),
+        SPM     CHAR(5),
+        SMTN    CHAR(15),
+        SCM     CHAR(5),
+        SDDY    CHAR(4),
+        SDDM    CHAR(4),
+        SPD     CHAR(5),
+        SDTN    CHAR(15),
+        SG      CHAR(5));
+
+
+
+
+
+
+
+
+
+
+
+
+

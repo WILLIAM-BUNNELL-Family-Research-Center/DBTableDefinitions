@@ -1,0 +1,34 @@
+/* FAMILY MEMBER TABLE */
+
+DROP TABLE BUNNELL.MM;
+
+CREATE TABLE BUNNELL.MM
+       (MEMBF   CHAR(6) NOT NULL,
+        MFN     CHAR(12),
+        MMN     CHAR(12),
+        MLN     CHAR(7),
+        MDBY    CHAR(4),
+        MDBM    CHAR(4),
+        MPB     CHAR(5),
+        MBTN    CHAR(15),
+        MDDY    CHAR(4),
+        MDDM    CHAR(4),
+        MPD     CHAR(5),
+        MDTN    CHAR(15),
+        MG      CHAR(5),
+        MBY     CHAR(4),
+        MBM     CHAR(4),
+        MCB     CHAR(5),
+        PF      CHAR(6),  
+        PSP     CHAR(1),
+        GEN     SMALLINT,
+
+        PRIMARY KEY(MEMBF));
+
+DROP INDEX BUNNELL.MM_MFN;
+
+CREATE INDEX BUNNELL.MM_MFN ON BUNNELL.MM(MFN);
+
+DROP INDEX BUNNELL.MM_PF;
+
+CREATE INDEX BUNNELL.MM_PF ON BUNNELL.MM(PF, PSP);

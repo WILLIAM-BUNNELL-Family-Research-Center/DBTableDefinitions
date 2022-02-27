@@ -1,0 +1,29 @@
+/* SPOUSE TABLE */
+
+DROP TABLE BUNNELL.SS;
+
+CREATE TABLE BUNNELL.SS
+       (MEMBF   CHAR(6) NOT NULL,
+        SP      CHAR(1) NOT NULL,
+        SFN     CHAR(12),
+        SMN     CHAR(12),
+        SLN     CHAR(12),
+        SDBY    CHAR(4),
+        SDBM    CHAR(4),
+        SPB     CHAR(5),
+        SBTN    CHAR(15),
+        SDMY    CHAR(4),
+        SDMM    CHAR(4),
+        SPM     CHAR(5),
+        SMTN    CHAR(15),
+        SCM     CHAR(5),
+        SDDY    CHAR(4),
+        SDDM    CHAR(4),
+        SPD     CHAR(5),
+        SDTN    CHAR(15),
+        SG      CHAR(5),
+        PRIMARY KEY (MEMBF, SP));
+
+DROP INDEX BUNNELL.SS_SFN;
+
+CREATE INDEX BUNNELL.SS_SFN ON BUNNELL.SS (SFN);
